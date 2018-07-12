@@ -16,5 +16,14 @@ export class NavBarComponent {
     );
     
   constructor(private breakpointObserver: BreakpointObserver) {}
-  
+
+  show: boolean = true;
+  ngOnInit() {
+    console.log("Starting!");
+
+    setTimeout(() => {
+      this.show=false;
+      console.log("Finished!");
+    }, 7000);
   }
+}
