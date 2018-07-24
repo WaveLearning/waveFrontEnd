@@ -3,11 +3,33 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 275px;
+  background-color: #E6F4F8;
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  background: #1F9EA3;
+  background: #000066;
+}
+
+.mat-list-item:hover {
+  background-color: #000066;
+  color: white;
+}
+
+.mat-sidenav-content {
+  background-color: #000066;
+}
+
+h3 {
+  text-align: center;
+}
+
+.dot {
+    height: 125px;
+    width: 125px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
 }
