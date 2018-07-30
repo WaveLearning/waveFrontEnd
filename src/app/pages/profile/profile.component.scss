@@ -1,0 +1,25 @@
+.left-content{
+    position: left;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    top: 2px;
+  
+    i:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+}
+
+.profile-img{
+	width: 200px;
+	height: 200px;
+}
+
+.profile-card{
+	height: 100vph;
+}
+
