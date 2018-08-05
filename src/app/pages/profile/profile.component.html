@@ -4,9 +4,9 @@
 			<nb-card-header>
 				<div class="row">
 				<div class="col-md-10">
-					Profile
+					<h3>Nick Jones</h3>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2" (click)="onEditClick()">
 					<div class="icon">
 					<i class="nb-edit"></i>
 					</div>
@@ -18,17 +18,69 @@
 				<!-- <h5 class="grid-h">Stacked to horizontal</h5> -->
 				
 				<div class="row show-grid">
+					<div class="col-md-5">
+						<div class="row show-grid">
+							<div class="col-md-5">
+								<div class="profile-icon">
+									<div class="fa fa-graduation-cap"></div>
+								</div>
+							</div>
+							<div class="col-md-7 profile-education">
+								
+									<h6>{{userProfile.school.field_of_study}}</h6>
+									<h6>{{userProfile.school.year_of_school}} year </h6>
+									<h6>{{userProfile.school.school_name}}</h6>
+									<h6>{{userProfile.school.school_location}}</h6>
+								
+							</div>
+						</div>
+
+						<!-- NEXT/////////////////////////////// -->
+						<div class="row show-grid container-skills">
+							
+							<div class="col-md-5">
+									<div class="profile-icon">
+										<div class="fa fa-envelope"></div>
+									</div>
+							</div>
+							<div class="col-md-7 profile-education">
+									<h6>{{userProfile.email}}<i class="fa fa-skype skype-icon"></i></h6>
+																
+							</div>
+						</div>
+						<!-- NEXT END////////////////////////// -->
+
+						<!-- NEXT/////////////////////////////// -->
+						<div class="row show-grid container-skills">
+							
+							<div class="col-md-5">
+									<div class="profile-icon">
+										<div class="fa fa-briefcase"></div>
+									</div>
+							</div>
+							<div class="col-md-7 profile-education">
+									<h6>{{userProfile.job.job_title}}</h6>
+									<h6>{{userProfile.job.job_team}}</h6>	
+									<h6>Hired {{userProfile.job.job_hired_term}} {{userProfile.job.job_hired_year}}</h6>	
+									<h6>Graduating {{userProfile.school.graduating_term}} {{ userProfile.school.graduating_year}}</h6>	
+							</div>
+						</div>
+						<!-- NEXT END////////////////////////// -->
+
+					</div>
 					<div class="col-md-3">
-						<img class="profile-img" src="../../../assets/images/alan.png" alt="Profile pic">
+						<h4>
+							Top 5 Skills
+						</h4>
+						<div class="skills-list" *ngFor="let skill of userProfile.top10skills">
+							<h6>{{skill}}</h6>
+						</div>
 					</div>
 					<div class="col-md-4">
-						<div>.col-md-5</div>
-					</div>
-					<div class="col-md-5">
-						<div>.col-md-5</div>
+						<img class="profile-img" src="../../../assets/images/alan.png" alt="Profile pic">
 					</div>
 				</div>
-		
+				
 			</nb-card-body>
 		</nb-card>
 	</div>

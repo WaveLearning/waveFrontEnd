@@ -22,6 +22,10 @@
     }
   }
 
+  .sticky-footer{
+    position: absolute;
+  }
+
   @include media-breakpoint-down(is) {
     .socials {
       font-size: 1.5rem;

@@ -23,3 +23,30 @@
 	height: 100vph;
 }
 
+.profile-icon{
+    // padding-top: 2vh;
+    align-self: center; 
+    font-size: 6vw;
+    padding-left: 2vw;
+    padding-right: 1vw;
+}
+
+.profile-education{
+    top: 3vh;
+}
+
+.skype-icon{
+    font-size: 20px;
+}
+
+.container-skills{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-list{
+    padding-left: 1vw;
+    padding-top: 10px;
+}
