@@ -1,8 +1,14 @@
 {
-    "/auth/*": {
+    "/students/*": {
       "target": "http://ec2-34-229-253-114.compute-1.amazonaws.com",
       "secure": false,
       "logLevel": "debug",
       "changeOrigin": true
+    },
+    "/api/*": {
+      "target": "https://randomuser.me",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
     }
-  }
+}

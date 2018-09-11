@@ -25,5 +25,4 @@ export interface Profile {
     linkedin: string;
     school: School;
     job: Job;
-    top10skills: string[];
 }

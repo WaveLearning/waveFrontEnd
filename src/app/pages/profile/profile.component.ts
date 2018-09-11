@@ -37,14 +37,7 @@ export class ProfileComponent {
 		   "job_team": "Global Technology Infrastructure",
 		   "job_hired_term": "Summer",
 		   "job_hired_year": "2019"
-		},
-		"top10skills": [
-			"Adobe Design Suit",
-		   "Angular",
-		   "React",
-		   "Javascript/ECMA6",
-		   "HTML/CSS"
-		 ]
+		}
 	 };
 
 	 onEditClick(){

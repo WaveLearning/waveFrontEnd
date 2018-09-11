@@ -1,11 +1,25 @@
 <div class="row">
-    <div class="col-md-12">
-      	<nb-card>
-        	<nb-card-body>
-            <div class="user-picture image" style="background-image: url(&quot;assets/images/nick.png&quot;);">
+  <div class="col-md-12">
+    <nb-card *ngFor="let student of matchedStudentsArr; let i=index">
               
-            </div>
-          </nb-card-body>
+      <nb-card-body (click)="goToProfile()">
+        <div class="row">
+          <div class="col-md-2">
+              <img class="userCardPicture" src="{{userProfileUrl[i].picture.large}}" alt="Profile pic">
+          </div>
+          <div class="col-md-5">
+              <h4>{{student.first_name}} {{student.last_name}}</h4>
+              <h6> {{student.email}} <i class="fa fa-skype skype-icon"></i></h6>
+          </div>
+          <div class="col-md-5">
+            <h4>Skills</h4>
+            <h6 *ngFor="let skill of student.skills; let i=index">
+              <div *ngIf="i < 3">{{skill}}</div>
+            </h6>
+          </div>
+        </div>
+      </nb-card-body>
+         
     </nb-card>
   </div>
 </div>
